@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Noto%20Sans%20Symbols:700|Noto%20Sans%20Symbols:400');
+
+:root {
+      --text: #011006;
+      --background: #ecfef3;
+      --primary: #15f679;
+      --secondary: #83ccfa;
+      --accent: #4d7df8;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #ecfef3;
+  font-family: 'Noto Sans Symbols';
+  font-weight: 400;
+    
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 10px 12px;
+  background-color: #83ccfa;
+  color: #011006;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  } */
+  
+  /* li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #4d7df8;
+  }
+  
+  .active {
+    background-color: #4d7df8;
+  } */
+
+  /* img {
+    border-radius: 50%;
+  } */
+  
+  header {
+    width: 1270px;
+    height: auto;
+      min-width: 80vh;
+      padding: 10px;
+      border-radius: 10px;
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1px solid #011006;
+      background: linear-gradient(
+        50deg,
+        #595E60 12%,
+        #707370 77%
+      );
+      background-color: #011006;
+      box-shadow: 0px 4ppx 24px 1px #707370;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      display: flex;
+      flex-direction: columns;
+      justify-content: space-between;
+  }
+  header > .logo {
+    width: 50px;
+    border-radius: 100%;
+    transition: all 0.4s;
+    background-color: #ecfef3;
+    &:hover {
+      border-radius:100%;
+      transform: translateY(-10px);
+      box-shadow: 0 7px 0 -2px #83ccfa, 0 15px 0 -4px #15f679,
+      0 16px 10px -3px #4d7df8;    
+    }
+  }
+
+  .navbar {
+    display: flex;
+    gap: 20px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 16px;
+  }
+  /* nav li {
+    margin-right: 20px;
+  } */
+
+  nav li a {
+    text-decoration: none;
+    color: #ecfef3;
+  
+  }
+
+form {
+  margin-top: 650px;
+  border: 1px solid #011006;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Noto Sans Symbols';
+  font-weight: 700;
+}
+
+div.gallery {
+  padding: 10px;
+  align-items: center;
+  justify-content: space-around ;
+  margin-top: 200px;
+  gap: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 280px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
