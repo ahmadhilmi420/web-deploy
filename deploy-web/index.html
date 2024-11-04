@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour and Travel</title>
+    <link rel="stylesheet" href="aseets/style.css">
+</head>
+<body>
+    <header>
+        <img src="aseets/logo.png" alt="logo" class="logo">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav> 
+            <button class="btn"> Order Now</button>
+        </div>
+    </header>
+<div>
+    <div class="gallery">
+        <a target="_blank" href="aseets/bali.jpg">
+        <img src="aseets/bali.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Pulau Dewata yang terkenal dengan pantainya yang eksotis, kebudayaan yang kaya, dan keramahan penduduknya.</div>
+    </div>
+    
+    <div class="gallery">
+        <a target="_blank" href="aseets/jogja.jpg">
+        <img src="aseets/jogja.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Kota budaya yang kaya akan sejarah, dengan Candi Borobudur dan Candi Prambanan yang mengagumkanKota budaya yang kaya akan sejarah, dengan Candi Borobudur dan Candi Prambanan yang mengagumkan</div>
+    </div>
+    
+    <div class="gallery">
+        <a target="_blank" href="aseets/komodo.jpg">
+        <img src="aseets/komodo.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">3.Rumah bagi komodo, kadal terbesar di dunia, dan keindahan bawah laut yang menakjubkan.</div>
+    </div>
+    
+    <div class="gallery">
+        <a target="_blank" href="aseets/toba.jpg">
+        <img src="aseets/toba.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Danau vulkanik terbesar di dunia yang memukau dengan pemandangan alam yang menakjubkan.</div>
+    </div>
+</div>
+    <br>
+    <div class="container">
+        <h2>Form Booking Order</h2>
+        <p>Bisa di isi kelengkapan data diri :.</p>
+    </div>
+    <div class="container">
+        <form action="/action_page.php">
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">First Name</label>
+            </div>
+        <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+            <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="email" name="Email" placeholder="Your Email..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">Jenis Kelamin : </label>
+            </div>
+            <div class="col-75">
+                <label for="lname">laki-laki </label>
+                <input type="radio" id="P" name="laki-laki">
+                <label for="lname">Perempuan </label>
+                <input type="radio" id="L" name="Perempuan">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="email">Berlangganaan :</label>
+            </div>
+            <div class="col-75">
+                <input type="checkbox" id="lname" name="Langganan">
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+            <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+            <select id="country" name="country">
+            <option value="Indonesia">Indonesia</option>
+            <option value="Korea">Korea</option>
+            <option value="usa">USA</option>
+            </select>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+            <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+        </div>
+        <br>
+        <div class="row">
+        <input type="submit" value="Submit">
+        </div>
+        </form>
+    </div>
+</body>
+<footer>
+    Copyright &copy; Revou 2024
+</footer>
+</html>
